@@ -25,7 +25,7 @@ if ls ./.lego/certificates | grep "$domain"
 else
     echo '证书签发失败，请检查80端口是否被占用，域名解析或者输入域名是否正确。'
 fi
-bash <(curl -Ls https://raw.githubusercontents.com/csdfsdffese/xrayrsh/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
 rm -rf /etc/XrayR/config.yml
 read -p "输入对接域名(例如www.baidu.com):" ym
 read -p "输入节点id:" nodeid
